@@ -7,7 +7,6 @@ final txtResultado = TextEditingController();
 
 class Calculator extends StatefulWidget {
   const Calculator({Key? key}) : super(key: key);
-
   @override
   State<Calculator> createState() => _CalculatorState();
 }
@@ -59,7 +58,7 @@ class _CalculatorState extends State<Calculator> {
           Padding(
               padding: const EdgeInsets.only(top: 20, right: 10, left: 10),
               child: TextField(
-                decoration: const InputDecoration(
+                decoration: const InputDecoration.collapsed(
                   hintText: "Resultado",
                 ),
                 textInputAction: TextInputAction.none,
